@@ -1,0 +1,21 @@
+{
+    "name": "abbotton/jddj",
+    "description": ":clap:京东到家PHP SDK:kissing_heart::kissing_heart:",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abbotton",
+            "email": "uctoo@foxmial.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Abbotton\\Jddj\\": "src/"
+        }
+    }
+}
