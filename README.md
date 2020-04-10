@@ -48,7 +48,7 @@ var_dump($result);
 | [单品直降](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=178) | $app->singlePromote |
 | [X元Y件](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=195) | $app->xyPromote |
 
-> ** [审计查询模块](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=196)已整合, 故不单独列出 **
+> [**审计查询模块**](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=196)已整合，故不单独列出。
 
 ### Change Log
 * 2020年4月10日
