@@ -37,7 +37,7 @@ class BaseRequest
     private function getParams(array $options)
     {
         $params = [];
-        $params['jd_param_json'] = json_encode($options);
+        $params['jd_param_json'] = json_encode($options, JSON_FORCE_OBJECT);
         $params['token'] = $this->config->token;
         $params['app_key'] = $this->config->appKey;
         $params['timestamp'] = date('Y-m-d H:i:s');
