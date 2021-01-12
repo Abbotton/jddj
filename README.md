@@ -47,6 +47,7 @@ var_dump($result);
 | [单品买赠](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=192) | $app->singleGift |
 | [单品直降](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=178) | $app->singlePromote |
 | [X元Y件](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=195) | $app->xyPromote |
+| [预售](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=215) | $app->preSell |
 
 > [**审计查询模块**](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=196)已整合，故不单独列出。
 
