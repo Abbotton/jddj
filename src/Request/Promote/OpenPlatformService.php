@@ -27,6 +27,7 @@ class OpenPlatformService extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function queryCouponInfoByCouponId(array $params = [])
     {
@@ -38,6 +39,7 @@ class OpenPlatformService extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function merchantApproval(array $params = [])
     {

@@ -48,6 +48,7 @@ class Price extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated 
      */
     public function syncStagedPromotion(array $params = [])
     {

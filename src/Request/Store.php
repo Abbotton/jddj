@@ -235,6 +235,7 @@ class Store extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function putPosOrderSubmitInfo(array $params = [])
     {
@@ -279,6 +280,7 @@ class Store extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function getMemberInfo(array $params = [])
     {

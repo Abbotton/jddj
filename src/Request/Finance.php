@@ -85,4 +85,15 @@ class Finance extends BaseRequest
     {
         return $this->get('settle/getSettleOrderDetail', $params);
     }
+
+    /**
+     * 大商户查询结算单明细文件交互接口
+     *
+     * @param array $params
+     * @return string
+     */
+    public function getSettleOrderFile(array $params)
+    {
+        return $this->get('settle/getSettleOrderFile', $params);
+    }
 }

@@ -125,6 +125,7 @@ class Order extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function orderDDTCDelivery(array $params = [])
     {
@@ -216,7 +217,7 @@ class Order extends BaseRequest
      */
     public function checkSelfPickCode(array $params = [])
     {
-        return $this->应接('ocs/checkSelfPickCode', $params);
+        return $this->post('ocs/checkSelfPickCode', $params);
     }
     
     /**
@@ -227,7 +228,7 @@ class Order extends BaseRequest
      */
     public function handleReport(array $params = [])
     {
-        return $this->应接('order/handleReport', $params);
+        return $this->post('order/handleReport', $params);
     }
     
     /**
@@ -305,5 +306,27 @@ class Order extends BaseRequest
     public function query(array $params = [])
     {
         return $this->get('order/es/query', $params);
+    }
+
+    /**
+     * 订单发送延迟配送的申请接口
+     *
+     * @param array $params
+     * @return mixed
+     */
+    public function sendDeliveryDelay(array $params = [])
+    {
+        return $this->post('ocs/sendDeliveryDelay', $params);
+    }
+
+    /**
+     * 订单绑定取货位
+     *
+     * @param array $params
+     * @return mixed
+     */
+    public function bindTakeDeliverPosition(array $params = [])
+    {
+        return $this->post('ocs/modifyOrderService/bindTakeDeliverPosition', $params);
     }
 }

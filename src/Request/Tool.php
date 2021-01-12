@@ -32,4 +32,15 @@ class Tool extends BaseRequest
     {
         return $this->setRequestUrl($this->baseUrl)->post('toolapi/imageUpload', $params);
     }
+
+    /**
+     * token更新确认接口
+     *
+     * @param array $params
+     * @return string
+     */
+    public function verificationUpdateToken(array $params = [])
+    {
+        return $this->post('ApplicationService/verificationUpdateToken', $params);
+    }
 }

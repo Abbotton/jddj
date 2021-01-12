@@ -80,6 +80,7 @@ class Stock extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function uploadSkuTimerOnOffFromOpen(array $params = [])
     {

@@ -38,6 +38,7 @@ class SinglePromote extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function adjustPromotionTime(array $params = [])
     {
@@ -93,6 +94,7 @@ class SinglePromote extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function adjustPromotionSku(array $params = [])
     {
@@ -107,7 +109,7 @@ class SinglePromote extends BaseRequest
      */
     public function queryPromotionInfo(array $params = [])
     {
-        return $this->get('singlePromote/queryPromotionInfo', $params);
+        return $this->get('singlePromote/queryPromotionInfoMsg', $params);
     }
     
     /**
@@ -119,5 +121,16 @@ class SinglePromote extends BaseRequest
     public function queryPromotionSku(array $params = [])
     {
         return $this->get('singlePromote/queryPromotionSku', $params);
+    }
+
+    /**
+     * 根据到家活动ID查询单品级促销活动商品接口
+     *
+     * @param array $params
+     * @return mixed
+     */
+    public function queryPromotionSkuByMinId(array $params = [])
+    {
+        return $this->post('singlePromote/queryPromotionSkuByMinId', $params);
     }
 }

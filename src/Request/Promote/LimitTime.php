@@ -71,6 +71,7 @@ class LimitTime extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function adjustPromotionSku(array $params = [])
     {
@@ -82,6 +83,7 @@ class LimitTime extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function adjustPromotionTime(array $params = [])
     {
