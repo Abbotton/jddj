@@ -3,16 +3,14 @@
 namespace Abbotton\Jddj\Request;
 
 /**
- * 工具类常规接口
- *
- * @package Abbotton\Jddj\Request
+ * 工具类常规接口.
  */
 class Tool extends BaseRequest
 {
     private $baseUrl = 'https://opentool.jddj.com/';
-    
+
     /**
-     * 文件上传接口
+     * 文件上传接口.
      *
      * @param array $params
      * @return string
@@ -21,9 +19,9 @@ class Tool extends BaseRequest
     {
         return $this->setRequestUrl($this->baseUrl)->post('toolapi/fileUpload', $params);
     }
-    
+
     /**
-     * 图片上传接口
+     * 图片上传接口.
      *
      * @param array $params
      * @return string
@@ -34,7 +32,7 @@ class Tool extends BaseRequest
     }
 
     /**
-     * token更新确认接口
+     * token更新确认接口.
      *
      * @param array $params
      * @return string

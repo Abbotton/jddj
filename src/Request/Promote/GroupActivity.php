@@ -5,14 +5,12 @@ namespace Abbotton\Jddj\Request\Promote;
 use Abbotton\Jddj\Request\BaseRequest;
 
 /**
- * 拼团类常规接口
- *
- * @package Abbotton\Jddj\Request
+ * 拼团类常规接口.
  */
 class GroupActivity extends BaseRequest
 {
     /**
-     * 到家小程序拼团促销活动取消接口
+     * 到家小程序拼团促销活动取消接口.
      *
      * @param array $params
      * @return string
@@ -21,9 +19,9 @@ class GroupActivity extends BaseRequest
     {
         return $this->post('groupActivity/cancelGroupActivity', $params);
     }
-    
+
     /**
-     * 到家小程序拼团促销活动部分商品取消接口
+     * 到家小程序拼团促销活动部分商品取消接口.
      *
      * @param array $params
      * @return string
@@ -32,9 +30,9 @@ class GroupActivity extends BaseRequest
     {
         return $this->post('groupActivity/cancelGroupSku', $params);
     }
-    
+
     /**
-     * 到家小程序拼团促销活动创建接口
+     * 到家小程序拼团促销活动创建接口.
      *
      * @param array $params
      * @return string

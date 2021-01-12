@@ -5,14 +5,12 @@ namespace Abbotton\Jddj\Request\Promote;
 use Abbotton\Jddj\Request\BaseRequest;
 
 /**
- * 优惠券类常规接口
- *
- * @package Abbotton\Jddj\Request
+ * 优惠券类常规接口.
  */
 class OpenPlatformService extends BaseRequest
 {
     /**
-     * 线下商家推送领券接口
+     * 线下商家推送领券接口.
      *
      * @param array $params
      * @return string
@@ -21,9 +19,9 @@ class OpenPlatformService extends BaseRequest
     {
         return $this->post('openPlatformService/generalActivityGrabCoupon4PlatForm', $params);
     }
-    
+
     /**
-     * 根据优惠券ID查询优惠券信息接口
+     * 根据优惠券ID查询优惠券信息接口.
      *
      * @param array $params
      * @return string
@@ -33,9 +31,9 @@ class OpenPlatformService extends BaseRequest
     {
         return $this->get('openPlatformService/queryCouponInfoByCouponId', $params);
     }
-    
+
     /**
-     * 优惠券商家审批接口
+     * 优惠券商家审批接口.
      *
      * @param array $params
      * @return string
@@ -45,9 +43,9 @@ class OpenPlatformService extends BaseRequest
     {
         return $this->post('openPlatformService/merchantApproval', $params);
     }
-    
+
     /**
-     * 新版根据优惠券ID查询优惠券信息接口
+     * 新版根据优惠券ID查询优惠券信息接口.
      *
      * @param array $params
      * @return string
