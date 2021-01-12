@@ -15,6 +15,7 @@ use Abbotton\Jddj\Request\Promote\LimitTime;
 use Abbotton\Jddj\Request\Promote\NewOrderDiscount;
 use Abbotton\Jddj\Request\Promote\OpenPlatformService;
 use Abbotton\Jddj\Request\Promote\OrderDiscount;
+use Abbotton\Jddj\Request\Promote\PreSell;
 use Abbotton\Jddj\Request\Promote\PromPackage;
 use Abbotton\Jddj\Request\Promote\SecondFold;
 use Abbotton\Jddj\Request\Promote\SingleGift;
@@ -24,6 +25,7 @@ use Abbotton\Jddj\Request\Stock;
 use Abbotton\Jddj\Request\Store;
 use Abbotton\Jddj\Request\Tool;
 use Exception;
+use GuzzleHttp\Client;
 
 /**
  * Class Application
@@ -49,14 +51,27 @@ use Exception;
  * @property SingleGift $singleGift
  * @property SinglePromote $singlePromote
  * @property XyPromote $xyPromote
+ * @property PreSell $preSell
  */
 class Application
 {
     private $config;
-    
+    /**
+     * @var Client
+     */
+    private $client;
+
     public function __construct($config)
     {
         $this->config = new Config($config);
+        $this->client = new Client();
+    }
+
+    public function setHttpClient($client) : self
+    {
+        $this->client = $client;
+
+        return $this;
     }
     
     public function __get($name)
@@ -65,9 +80,12 @@ class Application
             $class_name = ucfirst($name);
             $application = "\\Abbotton\\Jddj\\Request\\{$class_name}";
             if (!class_exists($application)) {
+                $application = "\\Abbotton\\Jddj\\Request\\Promote\\{$class_name}";
+            }
+            if (!class_exists($application)) {
                 throw new Exception($class_name . '不存在');
             }
-            $this->$name = new $application($this->config);
+            $this->$name = new $application($this->config, $this->client);
         }
         
         return $this->$name;
