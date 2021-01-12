@@ -23,8 +23,8 @@ class RequestTest extends TestCase
             $methods = $reflectionClass->getMethods();
             foreach ($methods as &$method) {
                 if (
-                    $method->class == 'Abbotton\\Jddj\\Request\\' . ucfirst($class)
-                    || $method->class == 'Abbotton\\Jddj\\Request\\Promote\\' . ucfirst($class)
+                    $method->class == 'Abbotton\\Jddj\\Request\\'.ucfirst($class)
+                    || $method->class == 'Abbotton\\Jddj\\Request\\Promote\\'.ucfirst($class)
                 ) {
                     $response = new Response(200, [], $responseJson);
                     $mock->append($response);

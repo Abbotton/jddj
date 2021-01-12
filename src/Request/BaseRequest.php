@@ -19,12 +19,13 @@ class BaseRequest
     public function setRequestUrl($url)
     {
         $this->config->baseUrl = $url;
+
         return $this;
     }
 
     protected function get($action, array $options = [])
     {
-        $url = $this->config->baseUrl . $action;
+        $url = $this->config->baseUrl.$action;
 
         return $this->request('GET', $url, ['query' => $this->getParams($options)]);
     }
@@ -34,7 +35,7 @@ class BaseRequest
         $method = strtoupper($method);
 
         $options['headers'] = [
-            'Content-Type' => 'application/x-www-form-urlencoded'
+            'Content-Type' => 'application/x-www-form-urlencoded',
         ];
 
         $response = $this->client->request($method, $url, $options);
@@ -51,7 +52,7 @@ class BaseRequest
         $params['timestamp'] = date('Y-m-d H:i:s');
         $params['v'] = $this->config->version;
         $params['format'] = $this->config->format;
-        $params["sign"] = $this->generateSign($params);
+        $params['sign'] = $this->generateSign($params);
 
         return $params;
     }
@@ -67,8 +68,8 @@ class BaseRequest
 
         $sortedString = $this->config->appSecret;
         foreach ($params as $k => &$v) {
-            $v = (string)$v;
-            if ("sign" !== $k) {
+            $v = (string) $v;
+            if ('sign' !== $k) {
                 $sortedString .= "$k$v";
             }
         }
@@ -80,7 +81,7 @@ class BaseRequest
 
     protected function post($action, array $params = [])
     {
-        $url = $this->config->baseUrl . $action;
+        $url = $this->config->baseUrl.$action;
 
         return $this->request('POST', $url, ['form_params' => $this->getParams($params)]);
     }

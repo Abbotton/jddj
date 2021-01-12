@@ -5,14 +5,12 @@ namespace Abbotton\Jddj\Request\Promote;
 use Abbotton\Jddj\Request\BaseRequest;
 
 /**
- * 新版优惠券类常规接口
- *
- * @package Abbotton\Jddj\Request
+ * 新版优惠券类常规接口.
  */
 class NewOrderDiscount extends BaseRequest
 {
     /**
-     * 订单级促销活动取消接口
+     * 订单级促销活动取消接口.
      *
      * @param array $params
      * @return string
@@ -21,9 +19,9 @@ class NewOrderDiscount extends BaseRequest
     {
         return $this->post('orderdiscount/cancelActivity', $params);
     }
-    
+
     /**
-     * 订单级促销活动查询活动提交处理结果接口
+     * 订单级促销活动查询活动提交处理结果接口.
      *
      * @param array $params
      * @return string
@@ -32,9 +30,9 @@ class NewOrderDiscount extends BaseRequest
     {
         return $this->get('orderdiscount/querySubmitActivityResult', $params);
     }
-    
+
     /**
-     * 订单级促销活动提交接口
+     * 订单级促销活动提交接口.
      *
      * @param array $params
      * @return string
@@ -43,9 +41,9 @@ class NewOrderDiscount extends BaseRequest
     {
         return $this->post('orderdiscount/submitActivity', $params);
     }
-    
+
     /**
-     * 订单级促销活动查询活动列表接口
+     * 订单级促销活动查询活动列表接口.
      *
      * @param array $params
      * @return string
@@ -54,9 +52,9 @@ class NewOrderDiscount extends BaseRequest
     {
         return $this->get('orderdiscount/findActivityInfoList', $params);
     }
-    
+
     /**
-     * 订单级促销活动查询促销详情接口
+     * 订单级促销活动查询促销详情接口.
      *
      * @param array $params
      * @return string
@@ -65,5 +63,4 @@ class NewOrderDiscount extends BaseRequest
     {
         return $this->get('orderdiscount/queryActivityInfo', $params);
     }
-    
 }
