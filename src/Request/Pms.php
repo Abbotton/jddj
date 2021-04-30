@@ -288,6 +288,7 @@ class Pms extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function getSkuSaleAttrName(array $params = [])
     {
@@ -399,6 +400,7 @@ class Pms extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function getShopFreshVarietyInfo(array $params = [])
     {
@@ -410,6 +412,7 @@ class Pms extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function getShopPageStockoutInfo(array $params = [])
     {
@@ -421,6 +424,7 @@ class Pms extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function getShopPageStockoutSkuInfo(array $params = [])
     {
@@ -432,9 +436,21 @@ class Pms extends BaseRequest
      *
      * @param array $params
      * @return string
+     * @deprecated
      */
     public function getShopPageStockoutVarietyInfo(array $params = [])
     {
         return $this->get('skuExtend/getShopPageStockoutVarietyInfo', $params);
+    }
+
+    /**
+     * 根据平台类目id查询类目销售属性.
+     *
+     * @param array $params
+     * @return mixed
+     */
+    public function queryPmsCategorySaleAttr(array $params = [])
+    {
+        return $this->get('OpenPmsCategorySaleAttrService/queryPmsCategorySaleAttr', $params);
     }
 }

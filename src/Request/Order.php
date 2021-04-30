@@ -327,4 +327,26 @@ class Order extends BaseRequest
     {
         return $this->post('ocs/modifyOrderService/bindTakeDeliverPosition', $params);
     }
+
+    /**
+     * 查询退差价逆向单接口.
+     *
+     * @param array $params
+     * @return mixed
+     */
+    public function queryReverseOrder(array $params = [])
+    {
+        return $this->get('reverse/queryReverseOrder', $params);
+    }
+
+    /**
+     * 生成退差价逆向单接口.
+     *
+     * @param array $params
+     * @return mixed
+     */
+    public function generateReverseOrder(array $params = [])
+    {
+        return $this->post('reverse/generateReverseOrder', $params);
+    }
 }
