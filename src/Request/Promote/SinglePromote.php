@@ -32,18 +32,6 @@ class SinglePromote extends BaseRequest
     }
 
     /**
-     * 单品实时促销活动结束时间调整接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function adjustPromotionTime(array $params = [])
-    {
-        return $this->post('promotesku/adjustPromotionTime', $params);
-    }
-
-    /**
      * 单品直降添加活动商品信息接口.
      *
      * @param array $params
@@ -85,18 +73,6 @@ class SinglePromote extends BaseRequest
     public function createPromotionInfos(array $params = [])
     {
         return $this->post('singlePromote/createPromotionInfos', $params);
-    }
-
-    /**
-     * 单品实时促销商品促销数量调整接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function adjustPromotionSku(array $params = [])
-    {
-        return $this->post('promotesku/adjustPromotionSku', $params);
     }
 
     /**

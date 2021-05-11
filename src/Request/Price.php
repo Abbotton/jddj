@@ -42,18 +42,6 @@ class Price extends BaseRequest
     }
 
     /**
-     * 修改门店商品会员日价格接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function syncStagedPromotion(array $params = [])
-    {
-        return $this->post('price/syncStagedPromotion', $params);
-    }
-
-    /**
      * 根据商家商品编码和商家门店编码修改门店价格接口.
      *
      * @param array $params

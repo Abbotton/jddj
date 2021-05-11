@@ -303,28 +303,4 @@ class EasyGoPromotion extends BaseRequest
     {
         return $this->get('easyGoPromotion/queryCombinationDiscountMoney', $params);
     }
-
-    /**
-     * 【促销类】(已废弃)轻松购满减促销接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function syncFullPromotion(array $params = [])
-    {
-        return $this->post('easyGoPromotion/syncFullPromotion', $params);
-    }
-
-    /**
-     * 【促销类】轻松购分期促销接口（废弃）.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function syncStagedPromotion(array $params = [])
-    {
-        return $this->post('easyGoPromotion/syncStagedPromotion', $params);
-    }
 }

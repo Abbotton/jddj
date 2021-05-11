@@ -119,18 +119,6 @@ class Order extends BaseRequest
     }
 
     /**
-     * 拣货完成且达达同城配送接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function orderDDTCDelivery(array $params = [])
-    {
-        return $this->post('bm/open/api/order/OrderDDTCDelivery', $params);
-    }
-
-    /**
      * 订单达达配送转商家自送接口.
      *
      * @param array $params

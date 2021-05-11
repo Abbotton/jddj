@@ -65,30 +65,6 @@ class LimitTime extends BaseRequest
     }
 
     /**
-     * 限时抢商品促销数量调整接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function adjustPromotionSku(array $params = [])
-    {
-        return $this->post('limitTime/adjustPromotionSku', $params);
-    }
-
-    /**
-     * 限时抢活动结束时间调整接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function adjustPromotionTime(array $params = [])
-    {
-        return $this->post('limitTime/adjustPromotionTime', $params);
-    }
-
-    /**
      * 限时抢整个活动取消接口.
      *
      * @param array $params

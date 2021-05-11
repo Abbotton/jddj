@@ -228,18 +228,6 @@ class Store extends BaseRequest
     }
 
     /**
-     * 商家发送POS机器信息接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function putPosOrderSubmitInfo(array $params = [])
-    {
-        return $this->post('member/putPosOrderSubmitInfo', $params);
-    }
-
-    /**
      * 批量同步商家会员信息接口.
      *
      * @param array $params
@@ -270,17 +258,5 @@ class Store extends BaseRequest
     public function updateCardInfo(array $params = [])
     {
         return $this->post('member/updateCardInfo', $params);
-    }
-
-    /**
-     * 根据用户手机号批量获取到家会员身份标识（openId）接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function getMemberInfo(array $params = [])
-    {
-        return $this->get('member/getMemberInfo', $params);
     }
 }

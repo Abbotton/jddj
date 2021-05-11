@@ -74,18 +74,6 @@ class Stock extends BaseRequest
     }
 
     /**
-     * 根据到家商品编码和到家门店编码批量定时设置门店商品可售状态接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function uploadSkuTimerOnOffFromOpen(array $params = [])
-    {
-        return $this->post('stock/uploadSkuTimerOnOffFromOpen', $params);
-    }
-
-    /**
      * 根据到家商品编码和到家门店编码批量修改门店商品可售状态接口.
      *
      * @param array $params

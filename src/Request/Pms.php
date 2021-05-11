@@ -74,18 +74,6 @@ class Pms extends BaseRequest
     }
 
     /**
-     * (旧版)根据商家商品编码修改商品信息接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function updateSkuOld(array $params = [])
-    {
-        return $this->post('pms/sku/updateSku', $params);
-    }
-
-    /**
      * 新版查询商品创建状态接口.
      *
      * @param array $params
@@ -284,18 +272,6 @@ class Pms extends BaseRequest
     }
 
     /**
-     * 查询销售属性名称接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function getSkuSaleAttrName(array $params = [])
-    {
-        return $this->get('pms/getSkuSaleAttrName', $params);
-    }
-
-    /**
      * 查询SPU创建状态接口.
      *
      * @param array $params
@@ -315,18 +291,6 @@ class Pms extends BaseRequest
     public function batchUpdateOutSuperId(array $params = [])
     {
         return $this->get('pms/batchUpdateOutSuperId', $params);
-    }
-
-    /**
-     * (旧版)新增商品信息接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function addSkuOld(array $params = [])
-    {
-        return $this->post('pms/sku/addSku', $params);
     }
 
     /**
@@ -393,54 +357,6 @@ class Pms extends BaseRequest
     public function getSkuCateAttrValuesBySkuId(array $params = [])
     {
         return $this->get('pms/getSkuCateAttrValuesBySkuId', $params);
-    }
-
-    /**
-     * 分页获取生鲜页面缺货率接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function getShopFreshVarietyInfo(array $params = [])
-    {
-        return $this->get('skuExtend/getShopFreshVarietyInfo', $params);
-    }
-
-    /**
-     * 分页获取非生鲜页面缺货率接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function getShopPageStockoutInfo(array $params = [])
-    {
-        return $this->get('skuExtend/getShopPageStockoutInfo', $params);
-    }
-
-    /**
-     * 分页获取非生鲜页面商品明细接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function getShopPageStockoutSkuInfo(array $params = [])
-    {
-        return $this->get('skuExtend/getShopPageStockoutSkuInfo', $params);
-    }
-
-    /**
-     * 分页获取生鲜页面缺品种商品明细接口.
-     *
-     * @param array $params
-     * @return string
-     * @deprecated
-     */
-    public function getShopPageStockoutVarietyInfo(array $params = [])
-    {
-        return $this->get('skuExtend/getShopPageStockoutVarietyInfo', $params);
     }
 
     /**
