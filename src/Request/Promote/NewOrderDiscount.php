@@ -74,4 +74,15 @@ class NewOrderDiscount extends BaseRequest
 	{
 		return $this->get('orderdiscount/queryActivityDetail', $params);
 	}
+
+    /**
+     * 订单级促销活动分页查询创建结果.
+     *
+     * @param  array  $params
+     * @return mixed
+     */
+    public function querySubmitActivityResultByPage(array $params = [])
+    {
+        return $this->get('orderdiscount/querySubmitActivityResultByPage', $params);
+    }
 }

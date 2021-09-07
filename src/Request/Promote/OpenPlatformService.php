@@ -6,6 +6,7 @@ use Abbotton\Jddj\Request\BaseRequest;
 
 /**
  * 优惠券类常规接口.
+ * @deprecated
  */
 class OpenPlatformService extends BaseRequest
 {
