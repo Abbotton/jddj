@@ -95,14 +95,14 @@ class Finance extends BaseRequest
         return $this->get('settle/getSettleOrderFile', $params);
     }
 
-	/**
-	 * 查询日账单压缩文件下载地址接口.
-	 *
-	 * @param  array  $params
-	 * @return mixed
-	 */
-	public function getBillOrderFileInfo(array $params)
-	{
-		return $this->get('balance/getBillOrderFileInfo', $params);
-	}
+    /**
+     * 查询日账单压缩文件下载地址接口.
+     *
+     * @param  array  $params
+     * @return mixed
+     */
+    public function getBillOrderFileInfo(array $params)
+    {
+        return $this->get('balance/getBillOrderFileInfo', $params);
+    }
 }
