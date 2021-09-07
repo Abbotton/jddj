@@ -74,13 +74,13 @@ class Application
 
     public function __get($name)
     {
-        if (!isset($this->$name)) {
+        if (! isset($this->$name)) {
             $class_name = ucfirst($name);
             $application = "\\Abbotton\\Jddj\\Request\\{$class_name}";
-            if (!class_exists($application)) {
+            if (! class_exists($application)) {
                 $application = "\\Abbotton\\Jddj\\Request\\Promote\\{$class_name}";
             }
-            if (!class_exists($application)) {
+            if (! class_exists($application)) {
                 throw new Exception($class_name.'不存在');
             }
             $this->$name = new $application($this->config, $this->client);
