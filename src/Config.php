@@ -15,13 +15,13 @@ class Config
 
     public function __construct(array $config = [])
     {
-        if (! isset($config['app_key']) || $config['app_key'] == '') {
+        if (!isset($config['app_key']) || $config['app_key'] == '') {
             throw new Exception('app_key不存在');
         }
-        if (! isset($config['app_secret']) || $config['app_secret'] == '') {
+        if (!isset($config['app_secret']) || $config['app_secret'] == '') {
             throw new Exception('app_secret不存在');
         }
-        if (! isset($config['token']) || $config['token'] == '') {
+        if (!isset($config['token']) || $config['token'] == '') {
             throw new Exception('token不存在');
         }
 

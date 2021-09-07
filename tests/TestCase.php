@@ -10,9 +10,9 @@ class TestCase extends BaseTestCase
     public function getApplicationInstance(): Application
     {
         $config = [
-            'app_key' => 'foo',
+            'app_key'    => 'foo',
             'app_secret' => 'bar',
-            'token' => 'foobar',
+            'token'      => 'foobar',
         ];
 
         return new Application($config);

@@ -13,6 +13,7 @@ class SingleGift extends BaseRequest
      * 单品买赠活动提交保存接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function confirmPromotion(array $params = [])
@@ -24,6 +25,7 @@ class SingleGift extends BaseRequest
      * 单品买赠添加主活动信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotionInfos(array $params = [])
@@ -35,6 +37,7 @@ class SingleGift extends BaseRequest
      * 单品买赠整个活动取消接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotion(array $params = [])
@@ -46,6 +49,7 @@ class SingleGift extends BaseRequest
      * 单品买赠添加活动商品信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotionGiftSku(array $params = [])
@@ -57,6 +61,7 @@ class SingleGift extends BaseRequest
      * 单品买赠活动部分商品取消接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotionSku(array $params = [])
@@ -68,6 +73,7 @@ class SingleGift extends BaseRequest
      * 单品买赠活动取消赠品接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotionGiftSku(array $params = [])

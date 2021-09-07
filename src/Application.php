@@ -29,28 +29,29 @@ use GuzzleHttp\Client;
 
 /**
  * Class Application.
- * @property Afs $afs
- * @property EasyGoPromotion $easyGoPromotion
- * @property Finance $finance
- * @property Order $order
- * @property Pms $pms
- * @property Price $price
- * @property Stock $stock
- * @property Store $store
- * @property Tool $tool
- * @property FreightPromote $freightPromote
- * @property FullCutPromote $fullCutPromote
- * @property GroupActivity $groupActivity
- * @property LimitTime $limitTime
- * @property NewOrderDiscount $newOrderDiscount
+ *
+ * @property Afs                 $afs
+ * @property EasyGoPromotion     $easyGoPromotion
+ * @property Finance             $finance
+ * @property Order               $order
+ * @property Pms                 $pms
+ * @property Price               $price
+ * @property Stock               $stock
+ * @property Store               $store
+ * @property Tool                $tool
+ * @property FreightPromote      $freightPromote
+ * @property FullCutPromote      $fullCutPromote
+ * @property GroupActivity       $groupActivity
+ * @property LimitTime           $limitTime
+ * @property NewOrderDiscount    $newOrderDiscount
  * @property OpenPlatformService $openPlatformService
- * @property OrderDiscount $orderDiscount
- * @property PromPackage $promPackage
- * @property SecondFold $secondFold
- * @property SingleGift $singleGift
- * @property SinglePromote $singlePromote
- * @property XyPromote $xyPromote
- * @property PreSell $preSell
+ * @property OrderDiscount       $orderDiscount
+ * @property PromPackage         $promPackage
+ * @property SecondFold          $secondFold
+ * @property SingleGift          $singleGift
+ * @property SinglePromote       $singlePromote
+ * @property XyPromote           $xyPromote
+ * @property PreSell             $preSell
  */
 class Application
 {
@@ -75,13 +76,13 @@ class Application
 
     public function __get($name)
     {
-        if (! isset($this->$name)) {
+        if (!isset($this->$name)) {
             $class_name = ucfirst($name);
             $application = "\\Abbotton\\Jddj\\Request\\{$class_name}";
-            if (! class_exists($application)) {
+            if (!class_exists($application)) {
                 $application = "\\Abbotton\\Jddj\\Request\\Promote\\{$class_name}";
             }
-            if (! class_exists($application)) {
+            if (!class_exists($application)) {
                 throw new Exception($class_name.'不存在');
             }
             $this->$name = new $application($this->config, $this->client);

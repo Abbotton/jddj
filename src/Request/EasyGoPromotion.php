@@ -11,6 +11,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】轻松购商品更新接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateSku(array $params = [])
@@ -22,6 +23,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】添加商家商品积分规则接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function setGoodsIntegral(array $params = [])
@@ -33,6 +35,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】轻松购商品查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function querySku(array $params = [])
@@ -44,6 +47,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】轻松购批量商品同步接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createSku(array $params = [])
@@ -55,6 +59,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】轻松购商品批量新增或更新接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchSaveOrUpdate(array $params = [])
@@ -66,6 +71,7 @@ class EasyGoPromotion extends BaseRequest
      * 【价格类】轻松购商品价格批量修改接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchUpdateSkuPrice(array $params = [])
@@ -77,6 +83,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】轻松购电子秤PLU配置维护接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncElectronicScalePlu(array $params = [])
@@ -88,6 +95,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】新版轻松购分期促销接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncPromotionSingleDiscountMoney4Open(array $params = [])
@@ -99,6 +107,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】轻松购单个商品同步接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addSku(array $params = [])
@@ -110,6 +119,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】轻松购电子秤PLU配置批量维护接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchSyncElectronicScalePlu(array $params = [])
@@ -121,6 +131,7 @@ class EasyGoPromotion extends BaseRequest
      * 【商品类】轻松购商品新增或更新接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function saveOrUpdate(array $params = [])
@@ -132,6 +143,7 @@ class EasyGoPromotion extends BaseRequest
      * 【价格类】轻松购商品价格修改接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateSkuPrice(array $params = [])
@@ -143,6 +155,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购单品数量折扣同步接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncPromotionSingleDiscountPercent(array $params = [])
@@ -154,6 +167,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购单品时段（折扣）促销接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncPromotionSinglePeriodDiscount(array $params = [])
@@ -165,6 +179,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购单品品牌分类折扣促销接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncPromotionSingleBrandCategoryDiscount(array $params = [])
@@ -176,6 +191,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购单品折扣第N件X元或者X折扣接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncPromotionSingleNDiscount(array $params = [])
@@ -187,6 +203,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购满减促销接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncPromotionFullDiscount(array $params = [])
@@ -198,6 +215,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购组合促销接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncPromotionCombinationDiscountMoney(array $params = [])
@@ -209,6 +227,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购设置商品促销类型接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncSkuPromotionType(array $params = [])
@@ -220,6 +239,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购查询商品促销表中目前生效的促销信息.
      *
      * @param array $params
+     *
      * @return string
      */
     public function querySkuPromotionType(array $params = [])
@@ -231,6 +251,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购单品折扣促销同步接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncPromotionSingleQuantitySales(array $params = [])
@@ -242,6 +263,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购规则促销接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncRulePromotion(array $params = [])
@@ -253,6 +275,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购满减促销查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryFullDiscount(array $params = [])
@@ -264,6 +287,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购商品数量折扣促销查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function querySingleDiscountPercent(array $params = [])
@@ -275,6 +299,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购分期促销查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryPromotionSingleDiscountMoney(array $params = [])
@@ -286,6 +311,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购单品时段（折扣）促销查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function querySinglePeriodDiscount(array $params = [])
@@ -297,6 +323,7 @@ class EasyGoPromotion extends BaseRequest
      * 【促销类】轻松购组合促销查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryCombinationDiscountMoney(array $params = [])
