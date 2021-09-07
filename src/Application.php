@@ -44,7 +44,6 @@ use GuzzleHttp\Client;
  * @property GroupActivity       $groupActivity
  * @property LimitTime           $limitTime
  * @property NewOrderDiscount    $newOrderDiscount
- * @property OpenPlatformService $openPlatformService
  * @property OrderDiscount       $orderDiscount
  * @property PromPackage         $promPackage
  * @property SecondFold          $secondFold

@@ -17,7 +17,7 @@ class RequestTest extends TestCase
         $app = $this->getApplicationInstance()->setHttpClient($client);
 
         $responseJson = $this->getResponseJson();
-        $classArray = ['afs', 'easyGoPromotion', 'finance', 'order', 'pms', 'price', 'stock', 'store', 'tool', 'freightPromote', 'fullCutPromote', 'groupActivity', 'limitTime', 'newOrderDiscount', 'openPlatformService', 'orderDiscount', 'promPackage', 'secondFold', 'singleGift', 'singlePromote', 'xyPromote', 'preSell'];
+        $classArray = ['afs', 'easyGoPromotion', 'finance', 'order', 'pms', 'price', 'stock', 'store', 'tool', 'freightPromote', 'fullCutPromote', 'groupActivity', 'limitTime', 'newOrderDiscount', 'orderDiscount', 'promPackage', 'secondFold', 'singleGift', 'singlePromote', 'xyPromote', 'preSell'];
         foreach ($classArray as &$class) {
             $reflectionClass = new \ReflectionClass($app->$class);
             $methods = $reflectionClass->getMethods();
@@ -29,7 +29,6 @@ class RequestTest extends TestCase
                     $response = new Response(200, [], $responseJson);
                     $mock->append($response);
                     $methodName = $method->getName();
-//                    var_dump($methodName);continue;
                     $result = $app->$class->$methodName(['foo' => 'bar']);
                     $this->assertSame($responseJson, $result);
                 }
