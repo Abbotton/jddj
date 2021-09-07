@@ -13,7 +13,6 @@ use Abbotton\Jddj\Request\Promote\FullCutPromote;
 use Abbotton\Jddj\Request\Promote\GroupActivity;
 use Abbotton\Jddj\Request\Promote\LimitTime;
 use Abbotton\Jddj\Request\Promote\NewOrderDiscount;
-use Abbotton\Jddj\Request\Promote\OpenPlatformService;
 use Abbotton\Jddj\Request\Promote\OrderDiscount;
 use Abbotton\Jddj\Request\Promote\PreSell;
 use Abbotton\Jddj\Request\Promote\PromPackage;
@@ -30,27 +29,27 @@ use GuzzleHttp\Client;
 /**
  * Class Application.
  *
- * @property Afs                 $afs
- * @property EasyGoPromotion     $easyGoPromotion
- * @property Finance             $finance
- * @property Order               $order
- * @property Pms                 $pms
- * @property Price               $price
- * @property Stock               $stock
- * @property Store               $store
- * @property Tool                $tool
- * @property FreightPromote      $freightPromote
- * @property FullCutPromote      $fullCutPromote
- * @property GroupActivity       $groupActivity
- * @property LimitTime           $limitTime
- * @property NewOrderDiscount    $newOrderDiscount
- * @property OrderDiscount       $orderDiscount
- * @property PromPackage         $promPackage
- * @property SecondFold          $secondFold
- * @property SingleGift          $singleGift
- * @property SinglePromote       $singlePromote
- * @property XyPromote           $xyPromote
- * @property PreSell             $preSell
+ * @property Afs              $afs
+ * @property EasyGoPromotion  $easyGoPromotion
+ * @property Finance          $finance
+ * @property Order            $order
+ * @property Pms              $pms
+ * @property Price            $price
+ * @property Stock            $stock
+ * @property Store            $store
+ * @property Tool             $tool
+ * @property FreightPromote   $freightPromote
+ * @property FullCutPromote   $fullCutPromote
+ * @property GroupActivity    $groupActivity
+ * @property LimitTime        $limitTime
+ * @property NewOrderDiscount $newOrderDiscount
+ * @property OrderDiscount    $orderDiscount
+ * @property PromPackage      $promPackage
+ * @property SecondFold       $secondFold
+ * @property SingleGift       $singleGift
+ * @property SinglePromote    $singlePromote
+ * @property XyPromote        $xyPromote
+ * @property PreSell          $preSell
  */
 class Application
 {
