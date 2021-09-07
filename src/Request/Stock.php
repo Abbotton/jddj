@@ -11,6 +11,7 @@ class Stock extends BaseRequest
      * 根据商家商品编码和商家门店编码更新门店现货库存接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function update(array $params = [])
@@ -22,6 +23,7 @@ class Stock extends BaseRequest
      * 根据到家商品编码更新门店单个商品缺货状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStockoutBySkuId(array $params = [])
@@ -33,6 +35,7 @@ class Stock extends BaseRequest
      * 根据到家商品编码批量更新门店商品缺货状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStockoutListBySkuId(array $params = [])
@@ -44,6 +47,7 @@ class Stock extends BaseRequest
      * 根据商家商品编码和商家门店编码批量修改现货库存接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchUpdateCurrentQtys(array $params = [])
@@ -55,6 +59,7 @@ class Stock extends BaseRequest
      * 根据到家商品编码和到家门店编码批量更新锁定库存接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateOpenLockQtys(array $params = [])
@@ -66,6 +71,7 @@ class Stock extends BaseRequest
      * 根据到家商品编码、到家门店编码更新门店现货库存.
      *
      * @param array $params
+     *
      * @return string
      */
     public function currentQty(array $params = [])
@@ -77,6 +83,7 @@ class Stock extends BaseRequest
      * 根据到家商品编码和到家门店编码批量修改门店商品可售状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateVendibility(array $params = [])
@@ -88,6 +95,7 @@ class Stock extends BaseRequest
      * 根据商家商品编码更新门店单个商品缺货状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStockoutByOutSkuId(array $params = [])
@@ -99,6 +107,7 @@ class Stock extends BaseRequest
      * 根据商家商品编码批量更新门店商品缺货状态
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStockoutListByOutSkuId(array $params = [])
@@ -110,6 +119,7 @@ class Stock extends BaseRequest
      * 根据商家商品编码和门店编码批量修改门店商品可售状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchUpdateVendibility(array $params = [])
@@ -121,6 +131,7 @@ class Stock extends BaseRequest
      * 根据商家商品编码单个更新可售状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateVendibility4SingleByOutsideSkuId(array $params = [])
@@ -132,6 +143,7 @@ class Stock extends BaseRequest
      * 根据到家商品编码单个更新可售状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateVendibility4SingleBySkuId(array $params = [])
@@ -143,6 +155,7 @@ class Stock extends BaseRequest
      * 根据到家商品编码和门店编码批量查询商品库存及可售状态信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryOpenUseable(array $params = [])
@@ -154,6 +167,7 @@ class Stock extends BaseRequest
      * 根据商家商品编码和门店编码批量查询商品库存及可售状态信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryStockCenter(array $params = [])
@@ -165,6 +179,7 @@ class Stock extends BaseRequest
      * （新）哥伦布仓储库存变更增量接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function merchantOrderOut(array $params = [])
@@ -176,6 +191,7 @@ class Stock extends BaseRequest
      * 哥伦布仓储库存变更增量接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateWmsStock4Inc(array $params = [])
@@ -187,6 +203,7 @@ class Stock extends BaseRequest
      * 哥伦布仓储库存变更存量接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateWmsStock4Rem(array $params = [])
@@ -198,6 +215,7 @@ class Stock extends BaseRequest
      * 哥伦布仓储库存全量查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getStockListForMerchant(array $params = [])
@@ -209,6 +227,7 @@ class Stock extends BaseRequest
      * 商家下单预占库存接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createMerchantOrder(array $params = [])
@@ -220,6 +239,7 @@ class Stock extends BaseRequest
      * 哥伦布商家取消订单返还预占接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function orderCancel(array $params = [])

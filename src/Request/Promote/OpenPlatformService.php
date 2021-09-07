@@ -6,6 +6,7 @@ use Abbotton\Jddj\Request\BaseRequest;
 
 /**
  * 优惠券类常规接口.
+ *
  * @deprecated
  */
 class OpenPlatformService extends BaseRequest
@@ -14,6 +15,7 @@ class OpenPlatformService extends BaseRequest
      * 线下商家推送领券接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function generalActivityGrabCoupon4PlatForm(array $params = [])
@@ -25,7 +27,9 @@ class OpenPlatformService extends BaseRequest
      * 根据优惠券ID查询优惠券信息接口.
      *
      * @param array $params
+     *
      * @return string
+     *
      * @deprecated
      */
     public function queryCouponInfoByCouponId(array $params = [])
@@ -37,7 +41,9 @@ class OpenPlatformService extends BaseRequest
      * 优惠券商家审批接口.
      *
      * @param array $params
+     *
      * @return string
+     *
      * @deprecated
      */
     public function merchantApproval(array $params = [])
@@ -49,6 +55,7 @@ class OpenPlatformService extends BaseRequest
      * 新版根据优惠券ID查询优惠券信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryCouponInfo(array $params = [])

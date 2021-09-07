@@ -13,6 +13,7 @@ class XyPromote extends BaseRequest
      * 创建X元Y件活动基本信息.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createOpenActivityXy(array $params = [])
@@ -24,6 +25,7 @@ class XyPromote extends BaseRequest
      * X元Y件生效/取消活动接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function auditPassOrCancelActivityXy(array $params = [])
@@ -36,6 +38,7 @@ class XyPromote extends BaseRequest
      * 京东官方文档拼写错误, `activity` 拼写成了 `acitivity`, 已反馈, 期待改正.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addOpActivityXyStationNew(array $params = [])
@@ -47,6 +50,7 @@ class XyPromote extends BaseRequest
      * X元Y件活动删除商品接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function deleteOpXySku(array $params = [])
@@ -59,6 +63,7 @@ class XyPromote extends BaseRequest
      * ps: 京东官方文档拼写错误, `activity` 拼写成了 `acitivity`, 已反馈, 期待改正.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addOpActivityXySkuNew(array $params = [])
@@ -70,6 +75,7 @@ class XyPromote extends BaseRequest
      * X元Y件活动删除门店接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function deleteOpXyStation(array $params = [])

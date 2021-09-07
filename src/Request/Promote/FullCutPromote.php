@@ -13,6 +13,7 @@ class FullCutPromote extends BaseRequest
      * 满减删除门店接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function deleteOpenPlatStation(array $params = [])
@@ -24,6 +25,7 @@ class FullCutPromote extends BaseRequest
      * 满减删除商品接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function deleteOpenPlatSku(array $params = [])
@@ -35,6 +37,7 @@ class FullCutPromote extends BaseRequest
      * 创建活动基本信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createOpenPlatActivityBasicInfo(array $params = [])
@@ -46,6 +49,7 @@ class FullCutPromote extends BaseRequest
      * 满减生效或取消活动接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function auditPassOrCancelActivity(array $params = [])
@@ -58,6 +62,7 @@ class FullCutPromote extends BaseRequest
      * 京东官方文档拼写错误, `activity` 拼写成了 `acitivity`, 已反馈, 期待改正.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addOpenPlatActivitySku(array $params = [])
@@ -70,6 +75,7 @@ class FullCutPromote extends BaseRequest
      * 京东官方文档拼写错误, `activity` 拼写成了 `acitivity`, 已反馈, 期待改正.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addOpenPlatActivityStation(array $params = [])

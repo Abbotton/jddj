@@ -11,6 +11,7 @@ class Afs extends BaseRequest
      * 查询订单是否可售后接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function checkCanApply(array $params = [])
@@ -22,6 +23,7 @@ class Afs extends BaseRequest
      * 售后单确认收货接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function confirmReceipt(array $params = [])
@@ -33,6 +35,7 @@ class Afs extends BaseRequest
      * 申请售后单审核接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function afsOpenApprove(array $params = [])
@@ -44,6 +47,7 @@ class Afs extends BaseRequest
      * 查询售后单跟踪日志接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getServiceLogInfo(array $params = [])
@@ -55,6 +59,7 @@ class Afs extends BaseRequest
      * 商家自主发起售后接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function submit(array $params = [])
@@ -66,6 +71,7 @@ class Afs extends BaseRequest
      * 查询订单申请售后详情接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getOrderAfsApplyInfo(array $params = [])
@@ -77,6 +83,7 @@ class Afs extends BaseRequest
      * 查询订单下售后单信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getAfsSeriveOrderList(array $params = [])
@@ -88,6 +95,7 @@ class Afs extends BaseRequest
      * 售后金额计算接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function calcMoney(array $params = [])
@@ -100,6 +108,7 @@ class Afs extends BaseRequest
      * ps: 京东官方文档拼写有误, `getFinalAfsServiceListByCondition` 拼写为 `getFinalAfsServiceListByConditon`, 已反馈, 期待改进.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getFinalAfsServiceListByCondition(array $params = [])
@@ -111,6 +120,7 @@ class Afs extends BaseRequest
      * 查询售后单详情接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getAfsService(array $params = [])

@@ -13,6 +13,7 @@ class Tool extends BaseRequest
      * 文件上传接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function fileUpload(array $params = [])
@@ -24,6 +25,7 @@ class Tool extends BaseRequest
      * 图片上传接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function imageUpload(array $params = [])
@@ -35,6 +37,7 @@ class Tool extends BaseRequest
      * token更新确认接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function verificationUpdateToken(array $params = [])

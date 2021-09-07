@@ -11,6 +11,7 @@ class Price extends BaseRequest
      * 修改门店商品会员价接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStationPriceAndVipPrice(array $params = [])
@@ -22,6 +23,7 @@ class Price extends BaseRequest
      * 根据到家商品编码和到家门店编码批量查询商品门店价格信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getStationInfoList(array $params = [])
@@ -34,6 +36,7 @@ class Price extends BaseRequest
      * ps: 京东官方文档中链接拼写有误, `cancel`拼写为`cancle`, 已反馈, 期待后续改正.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotionBtl(array $params = [])
@@ -45,6 +48,7 @@ class Price extends BaseRequest
      * 根据商家商品编码和商家门店编码修改门店价格接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStationPriceBySingle(array $params = [])
@@ -56,6 +60,7 @@ class Price extends BaseRequest
      * 根据到家商品编码和到家门店编码修改门店价格接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStationPrice(array $params = [])
@@ -67,6 +72,7 @@ class Price extends BaseRequest
      * 根据商家商品编码和商家门店编码批量修改门店价格接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchUpdateStationPrice(array $params = [])
@@ -78,6 +84,7 @@ class Price extends BaseRequest
      * 删除门店商品会员价接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function delVipPrice(array $params = [])
@@ -89,6 +96,7 @@ class Price extends BaseRequest
      * 创建会员促销
      *
      * @param array $params
+     *
      * @return string
      */
     public function savePromotionBtl(array $params = [])
