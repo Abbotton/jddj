@@ -13,6 +13,7 @@ class PreSell extends BaseRequest
      * 预售活动提交保存接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function confirmPromotion(array $params = [])
@@ -24,6 +25,7 @@ class PreSell extends BaseRequest
      * 预售添加活动规则信息接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function createPromotionRules(array $params = [])
@@ -35,6 +37,7 @@ class PreSell extends BaseRequest
      * 预售活动添加主活动信息接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function createPromotionInfos(array $params = [])
@@ -46,6 +49,7 @@ class PreSell extends BaseRequest
      * 预售整个活动取消接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function cancelPromotion(array $params = [])
@@ -57,6 +61,7 @@ class PreSell extends BaseRequest
      * 预售活动部分商品取消接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function cancelPromotionSku(array $params = [])
@@ -68,6 +73,7 @@ class PreSell extends BaseRequest
      * 预售添加活动商品信息接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function createPromotionSku(array $params = [])

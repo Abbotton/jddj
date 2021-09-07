@@ -11,6 +11,7 @@ class Order extends BaseRequest
      * 商家审核用户取消申请接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function orderCancelOperate(array $params = [])
@@ -22,6 +23,7 @@ class Order extends BaseRequest
      * 订单已打印接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function printOrder(array $params = [])
@@ -33,6 +35,7 @@ class Order extends BaseRequest
      * 商家确认接单接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function orderAcceptOperate(array $params = [])
@@ -44,6 +47,7 @@ class Order extends BaseRequest
      * 订单取消且退款接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelAndRefund(array $params = [])
@@ -55,6 +59,7 @@ class Order extends BaseRequest
      * 拣货完成且顾客自提接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function orderSelfMention(array $params = [])
@@ -66,6 +71,7 @@ class Order extends BaseRequest
      * 拣货完成且众包配送接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function orderJDZBDelivery(array $params = [])
@@ -78,6 +84,7 @@ class Order extends BaseRequest
      * ps: 京东官方文档拼写有误, `Seller`拼写为`Serller`, 已反馈, 期待后续改进.
      *
      * @param array $params
+     *
      * @return string
      */
     public function orderSellerDelivery(array $params = [])
@@ -89,6 +96,7 @@ class Order extends BaseRequest
      * 订单妥投接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function deliveryEndOrder(array $params = [])
@@ -100,6 +108,7 @@ class Order extends BaseRequest
      * 商家审核配送员取货失败接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function receiveFailedAudit(array $params = [])
@@ -111,6 +120,7 @@ class Order extends BaseRequest
      * 订单调整接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function adjustOrder(array $params = [])
@@ -122,6 +132,7 @@ class Order extends BaseRequest
      * 订单达达配送转商家自送接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function modifySellerDelivery(array $params = [])
@@ -133,6 +144,7 @@ class Order extends BaseRequest
      * 根据订单号查询订单跟踪接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getByOrderNoForOaos(array $params = [])
@@ -144,6 +156,7 @@ class Order extends BaseRequest
      * 新版根据订单号查询订单跟踪接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getByOrderNoForOaosNew(array $params = [])
@@ -155,6 +168,7 @@ class Order extends BaseRequest
      * 商家确认收到拒收退回.
      *
      * @param array $params
+     *
      * @return string
      */
     public function confirmReceiveGoods(array $params = [])
@@ -166,6 +180,7 @@ class Order extends BaseRequest
      * 取货失败后催配送员抢单接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function urgeDispatching(array $params = [])
@@ -177,6 +192,7 @@ class Order extends BaseRequest
      * 订单商家加小费接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addTips(array $params = [])
@@ -188,6 +204,7 @@ class Order extends BaseRequest
      * 应结金额接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function orderShoudSettlementService(array $params = [])
@@ -199,6 +216,7 @@ class Order extends BaseRequest
      * 订单自提码核验接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function checkSelfPickCode(array $params = [])
@@ -210,6 +228,7 @@ class Order extends BaseRequest
      * 商家处理配送员取货异常上报接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function handleReport(array $params = [])
@@ -221,6 +240,7 @@ class Order extends BaseRequest
      * 根据订单号查看配送员取货异常上报订单处理详情接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getHandleReportRecord(array $params = [])
@@ -232,6 +252,7 @@ class Order extends BaseRequest
      * 根据订单号查询用药人信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getOrderPrescriptionInfo(array $params = [])
@@ -243,6 +264,7 @@ class Order extends BaseRequest
      * 订单处方药审核结果接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function internetHospitalAudit(array $params = [])
@@ -254,6 +276,7 @@ class Order extends BaseRequest
      * 商家投诉达达配送员.
      *
      * @param array $params
+     *
      * @return string
      */
     public function complaintDadaDeliverForPlatForm(array $params = [])
@@ -265,6 +288,7 @@ class Order extends BaseRequest
      * 虚拟订单审核接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function virtualOrderAudit(array $params = [])
@@ -276,6 +300,7 @@ class Order extends BaseRequest
      * 绑定第三方运单号接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function bandThirdDeliverNoApiPlatform(array $params = [])
@@ -287,6 +312,7 @@ class Order extends BaseRequest
      * 订单列表查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function query(array $params = [])
@@ -298,6 +324,7 @@ class Order extends BaseRequest
      * 订单发送延迟配送的申请接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function sendDeliveryDelay(array $params = [])
@@ -309,6 +336,7 @@ class Order extends BaseRequest
      * 订单绑定取货位.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function bindTakeDeliverPosition(array $params = [])
@@ -320,6 +348,7 @@ class Order extends BaseRequest
      * 查询退差价逆向单接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function queryReverseOrder(array $params = [])
@@ -331,6 +360,7 @@ class Order extends BaseRequest
      * 生成退差价逆向单接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function generateReverseOrder(array $params = [])

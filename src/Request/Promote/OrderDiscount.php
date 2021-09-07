@@ -13,6 +13,7 @@ class OrderDiscount extends BaseRequest
      * 多买生效.
      *
      * @param array $params
+     *
      * @return string
      */
     public function auditPassOrCancelActivityNew(array $params = [])
@@ -24,6 +25,7 @@ class OrderDiscount extends BaseRequest
      * 多买多折删除门店接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function deleteOpStation(array $params = [])
@@ -35,6 +37,7 @@ class OrderDiscount extends BaseRequest
      * 多买多折删除商品
      *
      * @param array $params
+     *
      * @return string
      */
     public function deleteOpSku(array $params = [])
@@ -47,6 +50,7 @@ class OrderDiscount extends BaseRequest
      * 京东官方文档拼写错误, `activity` 拼写成了 `acitivity`, 已反馈, 期待改正.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addOpActivitySkuNew(array $params = [])
@@ -58,6 +62,7 @@ class OrderDiscount extends BaseRequest
      * 多买创建活动基本信息.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createOpActivityNew(array $params = [])
@@ -70,6 +75,7 @@ class OrderDiscount extends BaseRequest
      * 京东官方文档拼写错误, `activity` 拼写成了 `acitivity`, 已反馈, 期待改正.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addOpActivityStationNew(array $params = [])
@@ -81,6 +87,7 @@ class OrderDiscount extends BaseRequest
      * 根据到家活动ID查询订单级活动明细接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryActivityInfoById(array $params = [])
@@ -92,6 +99,7 @@ class OrderDiscount extends BaseRequest
      * 根据SKUID查询活动接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryActivityInfoBySkuId(array $params = [])

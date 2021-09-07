@@ -13,6 +13,7 @@ class LimitTime extends BaseRequest
      * 限时抢活动提交保存接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function confirmPromotion(array $params = [])
@@ -24,6 +25,7 @@ class LimitTime extends BaseRequest
      * 限时抢添加活动规则信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotionRules(array $params = [])
@@ -35,6 +37,7 @@ class LimitTime extends BaseRequest
      * 限时抢添加活动主信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotionInfos(array $params = [])
@@ -46,6 +49,7 @@ class LimitTime extends BaseRequest
      * 限时抢添加活动商品信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotionSku(array $params = [])
@@ -57,6 +61,7 @@ class LimitTime extends BaseRequest
      * 限时抢活动取消部分商品接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotionSku(array $params = [])
@@ -68,6 +73,7 @@ class LimitTime extends BaseRequest
      * 限时抢整个活动取消接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotion(array $params = [])

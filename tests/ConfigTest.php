@@ -32,7 +32,7 @@ class ConfigTest extends TestCase
     {
         try {
             $config = [
-                'app_key' => 'foo',
+                'app_key'    => 'foo',
                 'app_secret' => 'bar',
             ];
             new Config($config);
@@ -44,9 +44,9 @@ class ConfigTest extends TestCase
     public function test_will_get_instance_if_config_is_right()
     {
         $config = [
-            'app_key' => 'foo',
+            'app_key'    => 'foo',
             'app_secret' => 'bar',
-            'token' => 'foobar',
+            'token'      => 'foobar',
         ];
         $instance = new Config($config);
         $this->assertInstanceOf(Config::class, $instance);

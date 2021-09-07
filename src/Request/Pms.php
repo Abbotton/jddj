@@ -11,6 +11,7 @@ class Pms extends BaseRequest
      * 查询商家已上传商品信息列表接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function querySkuInfos(array $params = [])
@@ -22,6 +23,7 @@ class Pms extends BaseRequest
      * 查询商品图片处理结果接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryListBySkuIds(array $params = [])
@@ -33,6 +35,7 @@ class Pms extends BaseRequest
      * 新版新增商品信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addSku(array $params = [])
@@ -44,6 +47,7 @@ class Pms extends BaseRequest
      * 新版根据商品UPC码批量新增商品接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchAddSku(array $params = [])
@@ -55,6 +59,7 @@ class Pms extends BaseRequest
      * 根据到家商品编码批量更新商家商品编码接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchUpdateOutSkuId(array $params = [])
@@ -66,6 +71,7 @@ class Pms extends BaseRequest
      * 新版根据商家商品编码修改商品信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateSku(array $params = [])
@@ -77,6 +83,7 @@ class Pms extends BaseRequest
      * 新版查询商品创建状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getSkuStatus(array $params = [])
@@ -88,6 +95,7 @@ class Pms extends BaseRequest
      * 查询商家店内分类信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryCategoriesByOrgCode(array $params = [])
@@ -99,6 +107,7 @@ class Pms extends BaseRequest
      * 分页查询商品品牌信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryPageBrandInfo(array $params = [])
@@ -110,6 +119,7 @@ class Pms extends BaseRequest
      * 获取京东到家类目信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryChildCategoriesForOP(array $params = [])
@@ -121,6 +131,7 @@ class Pms extends BaseRequest
      * 新增商家店内分类信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addShopCategory(array $params = [])
@@ -132,6 +143,7 @@ class Pms extends BaseRequest
      * 修改商家店内分类信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateShopCategory(array $params = [])
@@ -143,6 +155,7 @@ class Pms extends BaseRequest
      * 删除商家店内分类接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function delShopCategory(array $params = [])
@@ -154,6 +167,7 @@ class Pms extends BaseRequest
      * 修改商家店内分类顺序接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function changeShopCategoryOrder(array $params = [])
@@ -165,6 +179,7 @@ class Pms extends BaseRequest
      * 分页查询京东到家商品前缀库接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryKeyWordDicInfo(array $params = [])
@@ -176,6 +191,7 @@ class Pms extends BaseRequest
      * 商家商品状态同步接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function syncProduct(array $params = [])
@@ -187,6 +203,7 @@ class Pms extends BaseRequest
      * 商家商品状态检查接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getProductStatus(array $params = [])
@@ -198,6 +215,7 @@ class Pms extends BaseRequest
      * 新增SPU信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addSpu(array $params = [])
@@ -209,6 +227,7 @@ class Pms extends BaseRequest
      * 追加新的SKU到指定的SPU接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function appendSku(array $params = [])
@@ -220,6 +239,7 @@ class Pms extends BaseRequest
      * 更新SPU基础信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateSpu(array $params = [])
@@ -231,6 +251,7 @@ class Pms extends BaseRequest
      * 更新SPU下指定SKU的基础信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateSkuBaseInfo(array $params = [])
@@ -242,6 +263,7 @@ class Pms extends BaseRequest
      * 更新SPU销售属性信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateSpuSaleAttr(array $params = [])
@@ -253,6 +275,7 @@ class Pms extends BaseRequest
      * 追加新的SPU销售属性信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function appendSpuSaleAttr(array $params = [])
@@ -264,6 +287,7 @@ class Pms extends BaseRequest
      * 查询SPU下所有的销售属性信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getSpuSaleAttr(array $params = [])
@@ -275,6 +299,7 @@ class Pms extends BaseRequest
      * 查询SPU创建状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getSpuStatus(array $params = [])
@@ -286,6 +311,7 @@ class Pms extends BaseRequest
      * 批量商家SPU编码接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function batchUpdateOutSuperId(array $params = [])
@@ -297,6 +323,7 @@ class Pms extends BaseRequest
      * 查询类目属性字典信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getAllSkuCategoryAttr(array $params = [])
@@ -308,6 +335,7 @@ class Pms extends BaseRequest
      * 根据三级类目ID查询类目属性字典信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getSkuCategoryAttrByCategoryId(array $params = [])
@@ -319,6 +347,7 @@ class Pms extends BaseRequest
      * 新增商品类目属性值信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function addSkuCateAttrValue(array $params = [])
@@ -330,6 +359,7 @@ class Pms extends BaseRequest
      * 更新商品类目属性值信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateSkuCateAttrValue(array $params = [])
@@ -341,6 +371,7 @@ class Pms extends BaseRequest
      * 删除商品类目属性值信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function deleteSkuCateAttrValue(array $params = [])
@@ -352,6 +383,7 @@ class Pms extends BaseRequest
      * 根据商品查询类目属性值信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getSkuCateAttrValuesBySkuId(array $params = [])
@@ -363,6 +395,7 @@ class Pms extends BaseRequest
      * 根据平台类目id查询类目销售属性.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function queryPmsCategorySaleAttr(array $params = [])

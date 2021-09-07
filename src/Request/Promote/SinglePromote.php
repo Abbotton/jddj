@@ -13,6 +13,7 @@ class SinglePromote extends BaseRequest
      * 单品直降活动提交保存接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function confirmPromotion(array $params = [])
@@ -24,6 +25,7 @@ class SinglePromote extends BaseRequest
      * 单品直降添加活动规则信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotionRules(array $params = [])
@@ -35,6 +37,7 @@ class SinglePromote extends BaseRequest
      * 单品直降添加活动商品信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotionSku(array $params = [])
@@ -46,6 +49,7 @@ class SinglePromote extends BaseRequest
      * 单品直降整个活动取消接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotion(array $params = [])
@@ -57,6 +61,7 @@ class SinglePromote extends BaseRequest
      * 单品直降活动部分商品取消接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotionSku(array $params = [])
@@ -68,6 +73,7 @@ class SinglePromote extends BaseRequest
      * 单品直降添加主活动信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotionInfos(array $params = [])
@@ -79,6 +85,7 @@ class SinglePromote extends BaseRequest
      * 根据到家活动ID查询单品级促销活动接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryPromotionInfo(array $params = [])
@@ -90,6 +97,7 @@ class SinglePromote extends BaseRequest
      * 根据到家商品ID查询单品级优惠活动列表接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryPromotionSku(array $params = [])
@@ -101,6 +109,7 @@ class SinglePromote extends BaseRequest
      * 根据到家活动ID查询单品级促销活动商品接口.
      *
      * @param array $params
+     *
      * @return mixed
      */
     public function queryPromotionSkuByMinId(array $params = [])

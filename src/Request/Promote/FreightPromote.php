@@ -13,6 +13,7 @@ class FreightPromote extends BaseRequest
      * 创建单品运费活动-活动提交接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createPromotion(array $params = [])
@@ -24,6 +25,7 @@ class FreightPromote extends BaseRequest
      * 单品运费活动管理-活动详情接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryPromotionInfo(array $params = [])
@@ -36,6 +38,7 @@ class FreightPromote extends BaseRequest
      * ps: 京东官方文档拼写错误, `cancel` 拼写成了 `cancle`, 已反馈, 期待改进.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelPromotion(array $params = [])
@@ -47,6 +50,7 @@ class FreightPromote extends BaseRequest
      * 单品运费活动管理-多条件分页查询接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryPromotionInfoList(array $params = [])
@@ -58,6 +62,7 @@ class FreightPromote extends BaseRequest
      * 单品运费活动详情-分页查询商品接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryPromotionSkuList(array $params = [])

@@ -11,6 +11,7 @@ class Store extends BaseRequest
      * 根据城市编码查询区域信息列表接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getNextLevelByType(array $params = [])
@@ -22,6 +23,7 @@ class Store extends BaseRequest
      * 查询商家中心账号信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function searchUser(array $params = [])
@@ -33,6 +35,7 @@ class Store extends BaseRequest
      * 商家门店评价信息回复接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function orgReplyComment(array $params = [])
@@ -44,6 +47,7 @@ class Store extends BaseRequest
      * 获取商家服务城市列表.
      *
      * @param array $params
+     *
      * @return string
      */
     public function queryVenderServiceArea(array $params = [])
@@ -55,6 +59,7 @@ class Store extends BaseRequest
      * 获取到家所有城市信息列表接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function allcities(array $params = [])
@@ -66,6 +71,7 @@ class Store extends BaseRequest
      * 根据门店编码修改运费起送价、满免以及商家自送运费接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStoreFreightConfig(array $params = [])
@@ -77,6 +83,7 @@ class Store extends BaseRequest
      * 修改门店基础信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStoreInfo4Open(array $params = [])
@@ -88,6 +95,7 @@ class Store extends BaseRequest
      * 获取到家门店编码列表接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getStationsByVenderId(array $params = [])
@@ -99,6 +107,7 @@ class Store extends BaseRequest
      * 修改门店运费起送价及满免接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStoreFreightConfigNew(array $params = [])
@@ -110,6 +119,7 @@ class Store extends BaseRequest
      * 根据到家门店编码修改商家自动接单接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateStoreConfig4Open(array $params = [])
@@ -121,6 +131,7 @@ class Store extends BaseRequest
      * 根据订单号查询商家门店评价信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getCommentByOrderId(array $params = [])
@@ -132,6 +143,7 @@ class Store extends BaseRequest
      * 获取门店配送范围接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getDeliveryRangeByStationNo(array $params = [])
@@ -143,6 +155,7 @@ class Store extends BaseRequest
      * 新增不带资质的门店信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createStore(array $params = [])
@@ -154,6 +167,7 @@ class Store extends BaseRequest
      * 修改商家中心账号状态接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateUser(array $params = [])
@@ -165,6 +179,7 @@ class Store extends BaseRequest
      * 根据到家门店编码查询门店基本信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getStoreInfoByStationNo(array $params = [])
@@ -176,6 +191,7 @@ class Store extends BaseRequest
      * 商家会员制卡成功接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createCardInfo(array $params = [])
@@ -187,6 +203,7 @@ class Store extends BaseRequest
      * 初始化商家会员信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function initMerchantMemberInfo(array $params = [])
@@ -198,6 +215,7 @@ class Store extends BaseRequest
      * 查询到家注册的商家会员注册信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function getCommonMemberRegisteredInfo(array $params = [])
@@ -209,6 +227,7 @@ class Store extends BaseRequest
      * 异步积分换券回调.
      *
      * @param array $params
+     *
      * @return string
      */
     public function exchangeCallback(array $params = [])
@@ -220,6 +239,7 @@ class Store extends BaseRequest
      * 商家会员续费成功接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function renewCardInfo(array $params = [])
@@ -231,6 +251,7 @@ class Store extends BaseRequest
      * 批量同步商家会员信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function synchronousMerchantMemberInfo(array $params = [])
@@ -242,6 +263,7 @@ class Store extends BaseRequest
      * 更新商家会员信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateMerchantMemberInfo(array $params = [])
@@ -253,6 +275,7 @@ class Store extends BaseRequest
      * 更新已绑定到家的商家会员卡信息接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function updateCardInfo(array $params = [])

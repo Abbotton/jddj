@@ -13,6 +13,7 @@ class GroupActivity extends BaseRequest
      * 到家小程序拼团促销活动取消接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelGroupActivity(array $params = [])
@@ -24,6 +25,7 @@ class GroupActivity extends BaseRequest
      * 到家小程序拼团促销活动部分商品取消接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function cancelGroupSku(array $params = [])
@@ -35,6 +37,7 @@ class GroupActivity extends BaseRequest
      * 到家小程序拼团促销活动创建接口.
      *
      * @param array $params
+     *
      * @return string
      */
     public function createGroupActivity(array $params = [])
