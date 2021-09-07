@@ -40,7 +40,7 @@ var_dump($result);
 | [拼团类](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=208) | $app->groupActivity |
 | [限时抢](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=184) | $app->limitTime |
 | [新版订单级促销](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=211) | $app->newOrderDiscount |
-| [优惠券](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=207) | $app->openPlatformService |
+| [~~优惠券~~](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=207) | ~~$app->openPlatformService~~(已下线) |
 | [多买多折](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=191) | $app->orderDiscount |
 | [组合购](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=209) | $app->promPackage |
 | [第二件N折](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=210) | $app->secondFold |
@@ -67,3 +67,13 @@ var_dump($result);
 * 2021年4月30日
   - v1.0.4发布
       - 添加商品和订单增量接口,标记部分已废弃接口
+
+* 2021年5月11日
+  - v1.0.5发布
+    - 同步官方接口
+
+* 2021年9月7日
+  - v1.0.6发布
+    - 移除下线接口
+    - 集成Github Action
+    - 同步官方接口
