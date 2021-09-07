@@ -65,7 +65,7 @@ class Application
         $this->client = new Client();
     }
 
-    public function setHttpClient($client): self
+    public function setHttpClient($client)
     {
         $this->client = $client;
 
