@@ -13,6 +13,7 @@ use Abbotton\Jddj\Request\Promote\FullCutPromote;
 use Abbotton\Jddj\Request\Promote\GroupActivity;
 use Abbotton\Jddj\Request\Promote\LimitTime;
 use Abbotton\Jddj\Request\Promote\NewOrderDiscount;
+use Abbotton\Jddj\Request\Promote\OpenPlatformService;
 use Abbotton\Jddj\Request\Promote\OrderDiscount;
 use Abbotton\Jddj\Request\Promote\PreSell;
 use Abbotton\Jddj\Request\Promote\PromPackage;
@@ -44,6 +45,7 @@ use GuzzleHttp\Client;
  * @property LimitTime        $limitTime
  * @property NewOrderDiscount $newOrderDiscount
  * @property OrderDiscount    $orderDiscount
+ * @property OpenPlatformService    $openPlatformService
  * @property PromPackage      $promPackage
  * @property SecondFold       $secondFold
  * @property SingleGift       $singleGift
