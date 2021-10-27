@@ -116,4 +116,15 @@ class SinglePromote extends BaseRequest
     {
         return $this->post('singlePromote/queryPromotionSkuByMinId', $params);
     }
+
+    /**
+     * 查询活动信息接口.
+     *
+     * @param  array  $params
+     * @return mixed
+     */
+    public function queryPromotionInfoDetail(array $params = [])
+    {
+        return $this->get('singlePromote/queryPromotionInfoDetail', $params);
+    }
 }
