@@ -106,4 +106,52 @@ class OrderDiscount extends BaseRequest
     {
         return $this->get('orderdiscount/queryActivityInfoBySkuId', $params);
     }
+
+    /**
+     * 订单级促销活动取消促销门店接口接口未更新.
+     *
+     * @param  array  $params
+     *
+     * @return string
+     */
+    public function cancelStation(array $params = [])
+    {
+        return $this->get('orderdiscount/cancelStation', $params);
+    }
+
+    /**
+     * 订单级促销活动追加门店接口接口未更新.
+     *
+     * @param  array  $params
+     *
+     * @return string
+     */
+    public function appendStation4Org(array $params = [])
+    {
+        return $this->get('orderdiscount/appendStation4Org', $params);
+    }
+
+    /**
+     * 订单级促销活动追加商品接口接口未更新.
+     *
+     * @param  array  $params
+     *
+     * @return string
+     */
+    public function appendSku4Org(array $params = [])
+    {
+        return $this->get('orderdiscount/appendSku4Org', $params);
+    }
+
+    /**
+     * 订单级促销活动取消促销商品接口接口未更新.
+     *
+     * @param  array  $params
+     *
+     * @return string
+     */
+    public function cancelSku(array $params = [])
+    {
+        return $this->get('orderdiscount/cancelSku', $params);
+    }
 }

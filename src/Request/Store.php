@@ -282,4 +282,27 @@ class Store extends BaseRequest
     {
         return $this->post('member/updateCardInfo', $params);
     }
+    /**
+     * 提交资质接口接口未更新.
+     *
+     * @param array $params
+     *
+     * @return string
+     */
+    public function submitStoreQualifyList(array $params = [])
+    {
+        return $this->post('store/submitStoreQualifyList', $params);
+    }
+
+    /**
+     * 查询门店资质审核状态接口接口未更新.
+     *
+     * @param array $params
+     *
+     * @return string
+     */
+    public function queryQualifyApproveState(array $params = [])
+    {
+        return $this->post('store/queryQualifyApproveState', $params);
+    }
 }

@@ -31,7 +31,6 @@ use GuzzleHttp\Client;
  * Class Application.
  *
  * @property Afs              $afs
- * @property EasyGoPromotion  $easyGoPromotion
  * @property Finance          $finance
  * @property Order            $order
  * @property Pms              $pms

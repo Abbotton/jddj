@@ -114,4 +114,28 @@ class Finance extends BaseRequest
     {
         return $this->get('balance/getBillOrderFileInfo', $params);
     }
+
+    /**
+     * 商家开票申请接口接口未更新.
+     *
+     * @param  array  $params
+     *
+     * @return mixed
+     */
+    public function applyInvoice(array $params)
+    {
+        return $this->get('invoice/applyInvoice', $params);
+    }
+
+    /**
+     * 查询开票申请详情接口接口未更新.
+     *
+     * @param  array  $params
+     *
+     * @return mixed
+     */
+    public function queryApplyInvoiceDetail(array $params)
+    {
+        return $this->get('invoice/queryApplyInvoiceDetail', $params);
+    }
 }
