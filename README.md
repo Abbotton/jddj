@@ -27,7 +27,6 @@ var_dump($result);
 | 模块名称 | 对应类 |
 | ----: | :---- |
 | [售后类](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=170) | $app->afs |
-| [轻松购](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=203) | $app->easyGoPromotion |
 | [财务类](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=182) | $app->finance |
 | [订单类](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=169) | $app->order |
 | [商品类](https://openo2o.jddj.com/staticnew/widgets/resources.html?groupid=180) | $app->pms |
@@ -84,4 +83,8 @@ var_dump($result);
 
 * 2021年10月27日
   - v1.0.8发布
+    - 同步官方接口
+
+* 2022年01月22日
+  - v1.0.9发布
     - 同步官方接口
