@@ -282,6 +282,7 @@ class Store extends BaseRequest
     {
         return $this->post('member/updateCardInfo', $params);
     }
+
     /**
      * 提交资质接口接口未更新.
      *

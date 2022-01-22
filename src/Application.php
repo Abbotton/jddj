@@ -3,7 +3,6 @@
 namespace Abbotton\Jddj;
 
 use Abbotton\Jddj\Request\Afs;
-use Abbotton\Jddj\Request\EasyGoPromotion;
 use Abbotton\Jddj\Request\Finance;
 use Abbotton\Jddj\Request\Order;
 use Abbotton\Jddj\Request\Pms;
